@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" type="image" href="/logo.png" />
+    <title>portfolio - Services</title>
+</head>
+<body>
+    <header class='m-0 text-white h-[10vh] fixed top-0 w-full'>
+        <nav class='flex px-12 justify-between items-center bg-violet-800 h-full w-screen'>
+          <div class="logo text-2xl cursor-pointer w-2/5"><a class="logopic hover:text-red-600" href='index.html'>Portfolio<span class='dot text-4xl text-red-600'>.</span></a></div>
+          <div class="burger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+        <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+    </div>
+    <div class="right">
+              <div><a href='about.html' class='hover:text-red-600 cursor-pointer'>About</a></div>
+              <div><a href='services.html' class='hover:text-red-600 cursor-pointer'>Services</a></div>
+              <div><a href='projects.html' class='hover:text-red-600 cursor-pointer'>Project</a></div>
+              <div><a href='contact.html' class='hover:text-red-600 cursor-pointer'>Contact</a></div>
+          </div>
+        </nav>
+      </header>
+    <main class="m-0 min-h-[100vh] text-white p-0 bg-indigo-950 p-4">
+        <section class="second w-full mt-[10vh] py-[2vh] min-h-[80vh]">
+          <h1 class="text-4xl font-semibold w-5/6 mx-auto mb-4">Services</h1>
+          <div class="services flex flex-wrap items-center justify-center gap-8 w-full">
+            <div class="s.one flex flex-col items-center justify-center bg-gray-500 p-6 mt-3 lg:w-2/5 h-[30vh] rounded-lg gap-8 w-5/6">
+              <img src="/data.png" alt="website" width="30px" height="30px" />
+              <div class="text h-3/4">
+                <h1 class="text-2xl font-semibold text-center">
+                  Custom Web App Dev.
+                </h1>
+                <p class="text-center text-sm">
+                  Building dynamic and scalable web applications from scratch
+                  using a combination of React.js, Next.js, Node.js, Express.js,
+                  and MongoDB. Creating robust and feature-rich applications
+                  tailored to client requirements.
+                </p>
+              </div>
+            </div>
+            <div class="s.two flex flex-col items-center justify-center bg-gray-500 p-6 mt-3 lg:w-2/5 h-[30vh] rounded-lg gap-8 w-5/6">
+              <img src="/web-design.png" alt="website"width="30px" height="30px" />
+              <div class="text h-3/4">
+                <h1 class="text-2xl font-semibold text-center">
+                Responsive Web Design
+                </h1>
+                <p class="text-center text-sm">
+                 Creating websites that are optimized for various devices and screen sizes to ensure a consistent and enjoyable user experience across desktops, tablets, and smartphones.
+                </p>
+              </div>
+            </div>
+            <div class="s.three flex flex-col items-center justify-center bg-gray-500 p-6 lg:w-2/5 h-[30vh] rounded-lg lg:gap-4 gap-8 w-5/6">
+              <img src="/design.png" alt="website"width="30px" height="30px" class=""/>
+              <div class="text h-5/6">
+                <h1 class="text-2xl font-semibold text-center">
+                UI/UX Design
+                </h1>
+                <p class="text-center text-sm">
+                Creating intuitive UIs and crafting engaging UX to boost usability and drive user satisfaction. This involves designing interfaces that are easy to navigate, ultimately enhancing user satisfaction. Aim to optimize user interaction through thoughtful design decisions.
+                </p>
+              </div>
+            </div>
+            <div class="s.three flex flex-col items-center justify-center bg-gray-500 p-6 lg:w-2/5 h-[30vh] rounded-lg lg:gap-4 gap-8 w-5/6">
+              <img src="/handshake.png" alt="website"width="30px" height="30px" />
+              <div class="text h-3/4">
+                <h1 class="text-2xl font-semibold text-center">
+                Consultation & Training
+                </h1>
+                <p class="text-center text-sm">
+                Providing consultation services to clients on technology stack selection, architecture design, and best practices, as well as offering training sessions or workshops to teams on JavaScript frameworks and development methods.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class='mx-20 relative top-4'> 
+        <Projects/>
+      </main>
+</body>
+<script>
+  document.querySelector('.burger').addEventListener('click',()=>{
+          const Links = document.querySelector('.right');
+            if (Links.style.display === 'block') {
+                Links.style.display = 'none';
+            } else {
+                Links.style.display = 'block';
+            }
+        });
+ </script>
+</html>
