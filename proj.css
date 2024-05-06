@@ -14,21 +14,21 @@
    .pass{
       width: 100%;
       height: 50%;
-      background-image: url("./password-manager.png");
+      background-image: url("../password-manager.png");
       background-size: cover;
    }
    
    .spotify{
       width: 100%;
       height: 50%;
-      background-image: url("./spotify.png");
+      background-image: url("../spotify.png");
       background-size: cover;
    }
      
    .ttt{
       width: 100%;
       height: 50%;
-      background-image: url("./ttt.png");
+      background-image: url("../ttt.png");
       background-size: cover;
    }
    
