@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="proj.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-    <link rel="icon" type="image" href="/logo.png" />
+    <link rel="icon" type="image" href="./logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>portfolio - Projects</title>
 </head>
@@ -71,7 +71,7 @@
                 <a  class="ttt shadoww"
                   href="https://github.com/ahsinali-17/tic-tac-toe.git"
                   target="_blank"
-                ></a>
+                ></a> 
              
               <div>
                 <h3 class="text-center text-2xl font-semibold mb-2">
@@ -139,7 +139,7 @@
           <div class="all-proj flex justify-center">
             <button class="mt-6 text-red-600 flex">
               <span id="show">Show All</span>
-              <img id="hide" src="/down.svg" alt="." />
+              <img id="hide" src="./down.svg" alt="." />
             </button>
           </div>
         </section>
@@ -155,11 +155,11 @@
           const hide = document.getElementById('hide');
           if (hprojects.style.display === 'none') {
               hprojects.style.display = 'flex';
-              hide.src = '/up.svg';
+              hide.src = './up.svg';
               show.innerHTML = 'Show Less';
           } else if (hprojects.style.display === 'flex') {
               hprojects.style.display = 'none';
-              hide.src = '/down.svg';
+              hide.src = './down.svg';
               show.innerHTML = 'Show All';
           }
       });
