@@ -58,14 +58,14 @@
     .pass{
       width: 100%;
       height: 25%;
-      background-image: url(./password-manager.png);
+      background-image: url("./password-manager.png");
       background-size: contain;
       background-repeat: no-repeat;
    }
    .spotify{
       width: 100%;
       height: 35%;
-      background-image: url(./spotify.png);
+      background-image: url("./spotify.png");
       background-size: contain;
       background-repeat: no-repeat;
    }
@@ -73,14 +73,14 @@
    .ttt{
       width: 100%;
       height: 35%;
-      background-image: url(./ttt.png);
+      background-image: url("./ttt.png");
       background-size: cover;
    }
    
    .dailynews{
     width: 100%;
     height: 35%;
-    background-image: url(./dailynews.png);
+    background-image: url("./dailynews.png");
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -88,7 +88,7 @@
   .dice-game{
     width: 100%;
     height: 35%;
-    background-image: url(./dice.png);
+    background-image: url("./dice.png");
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -96,7 +96,7 @@
   .amazon{
     width: 100%;
     height: 35%;
-    background-image: url(./amazon.png);
+    background-image: url("./amazon.png");
     background-size: contain;
     background-repeat: no-repeat;
   }  
