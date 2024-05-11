@@ -47,6 +47,8 @@
                 <div class='text-xs mt-4 text-red-600 text-center'>Crafting digital experiences that leave a lasting
                     impression,<span class='flex mt-2 items-center justify-center'> one line of code at a time. &nbsp;
                         <img src='./smile.svg' alt='.' /></span></div>
+                        <div class="flex justify-center">
+                        <a href="./Resume.pdf" id="link"><button id="downloadButton" class="cv bg-red-600 text-white font-semibold text-sm p-2 rounded-lg mt-4 text-center cursor-pointer">Download CV</button></a> </div>
             </div>
 
             <div class="rightSection w-[40%]">
@@ -72,6 +74,19 @@
                 Links.style.display = 'block';
             }
         });
+       
+        const onButtonClick = () => {
+        const link = document.getElementById("link");
+        link.href.download = "Resume.pdf"; // specify the filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    // Attach click event listener to the download button
+    const downloadButton = document.getElementById('downloadButton');
+    downloadButton.addEventListener('click', onButtonClick);
+    
     </script>
 </body>
 
