@@ -60,7 +60,7 @@
     </main>
 
     <script>
-        const typed = new Typed('#el', {
+        const typed = new Typed('#el' , {
             strings: ['Web Developer.', 'React Developer.'],
             typeSpeed: 50,
         });
@@ -78,9 +78,6 @@
         const onButtonClick = () => {
         const link = document.getElementById("link");
         link.href.download = "Resume.pdf"; // specify the filename
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
     };
 
     // Attach click event listener to the download button
