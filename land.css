@@ -7,23 +7,39 @@
     .first{
         flex-direction: column;
         justify-content: center;
-        margin-top: 10vh;
+        align-items: center;
         width: 100vw;
     }
     .leftSection{
         min-width:90vw;
         text-align: center;
         padding: 0;
-        min-height: 55vh;
+        max-height: 50vh;
         font-size: 0.8 rem;
         line-height: 1 rem;
     }
     .rightSection{
         min-width: 90vw;
+        max-height: 40vh;
         text-align: center;
         padding: 0;
-        min-height: 25vh;
         font-size: 0.8 rem;
         line-height: 1 rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .rightSection{
+        min-width: 90vw;
+        max-height: 30vh;
+        text-align: center;
+        padding: 0;
+        font-size: 0.8 rem;
+        line-height: 1 rem;
+        display: flex;
+        justify-content: center;
     }
 }
